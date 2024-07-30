@@ -28,7 +28,7 @@ namespace ConsoleApp1
 
 
 
-            await db.SqlQueryable<example_table>("select * from example_table")
+            await db.Queryable<example_table>()
                 .FirstAsync();
 
             Console.ReadLine();
